@@ -1,0 +1,403 @@
+  body {
+      font-family: 'Roboto', sans-serif;
+      margin: 0;
+      padding: 0;
+  }
+
+  .modal-dialog,
+  .modal-content {
+      height: 90%;
+  }
+
+  .modalTextH3 {
+      font-weight: 800;
+      font-family: 'Gloria Hallelujah', cursive;
+  }
+
+  .modalTextH4 {
+      font-weight: 800;
+      font-size: 20px;
+      font-family: 'Gloria Hallelujah', cursive;
+  }
+
+  .modal-header {
+      background: -webkit-linear-gradient(45deg, #54d400 48%, #1b1e21 48%);
+      background: -webkit-linear-gradient(left, #54d400 48%, #1b1e21 48%);
+      background: linear-gradient(45deg, #54d400 48%, #1b1e21 48%);
+  }
+
+  .modal-body {
+      color: white;
+      background-image: url("images/modalBG.jpg");
+      background-size: cover;
+  }
+
+  .xSign {
+      font-size: 40px;
+  }
+
+  .top-div {
+      background-image: url("images/backImg.jpg");
+      background-size: cover;
+      background-repeat: no-repeat;
+      padding-bottom: 20px;
+      height: 100vh;
+  }
+
+  .topbar {
+      height: 20px;
+      background-color: #2d3436;
+  }
+
+  #container-topbar {
+      margin-left: 0;
+      padding-left: 0;
+  }
+
+  #btnContainer {
+      height: 100%;
+      padding: 20px 10px 10px 10px;
+  }
+
+  .btnParagraph {
+      background-color: #54d400;
+      font-size: 30px;
+      font-family: 'Gloria Hallelujah', cursive;
+      font-weight: 800;
+      padding-left: 10px;
+  }
+
+  .navbar-brand {
+      color: #0a0a0a;
+      font-weight: 800;
+      font-size: 22px;
+      font-family: 'Gloria Hallelujah', cursive;
+  }
+
+  .navbar-brand:hover {
+      color: #0a0a0a;
+  }
+
+  .bg-dark {
+      background-color: #222;
+  }
+
+  .mx-background-top-linear {
+      background: -webkit-linear-gradient(45deg, #54d400 48%, #1b1e21 48%);
+      background: -webkit-linear-gradient(left, #54d400 48%, #1b1e21 48%);
+      background: linear-gradient(45deg, #54d400 48%, #1b1e21 48%);
+  }
+
+  .searchNameBtn {
+      width: 10%;
+      font-weight: 500;
+      font-size: 18px;
+      color: white;
+      background-color: #2d3436;
+      border: 1px solid black;
+  }
+
+  .searchNameBtn:hover {
+      background-color: #54d400;
+      color: black;
+  }
+
+  .searchNameBtn:focus {
+      outline: 0;
+  }
+
+  .searchNameBtn:active {
+      background-color: #2d3436;
+      color: black;
+  }
+
+  .backBtn,
+  .btn-bikes {
+      width: 100%;
+      font-weight: 500;
+      font-size: 18px;
+      color: white;
+      background-color: #2d3436;
+      border: 1px solid black;
+  }
+
+  .backBtn {
+      margin-top: 50px;
+  }
+
+  .backBtn:hover {
+      background-color: #54d400;
+      color: black;
+  }
+
+  .backBtn:focus {
+      outline: 0;
+  }
+
+  .backBtn:active {
+      background-color: #2d3436;
+      color: black;
+  }
+
+  .btn-bikes:hover {
+      background-color: #54d400;
+      color: black;
+  }
+
+  .btn-bikes:focus {
+      outline: 0;
+  }
+
+  .btn-bikes:active {
+      background-color: #2d3436;
+      color: black;
+  }
+
+  #searchByBrandName {
+      border: 5px solid #2d3436;
+      background-color: black;
+      color: white;
+  }
+
+  #searchByBrandName:focus {
+      outline: 0;
+  }
+
+  #refreshSearchingBtn {
+      width: 30%;
+      font-weight: 500;
+      font-size: 18px;
+      color: white;
+      background-color: #2d3436;
+      border: 1px solid black;
+      margin-left: 30%;
+  }
+
+  #refreshSearchingBtn:hover {
+      background-color: #54d400;
+      color: black;
+  }
+
+  #refreshSearchingBtn:focus {
+      outline: 0;
+  }
+
+  #refreshSearchingBtn:active {
+      background-color: #2d3436;
+      color: black;
+  }
+
+  #startSearchingBtn {
+      width: 100%;
+      font-weight: 500;
+      font-size: 18px;
+      color: white;
+      background-color: #2d3436;
+      border: 1px solid black;
+  }
+
+  #startSearchingBtn:hover {
+      background-color: #54d400;
+      color: black;
+  }
+
+  #startSearchingBtn:focus {
+      outline: 0;
+  }
+
+  #startSearchingBtn:active {
+      background-color: #2d3436;
+      color: black;
+  }
+
+  .radioBtnMale,
+  .radioBtnFemale,
+  .radioBtnChild {
+      font-weight: 500;
+      font-size: 22px;
+      color: white;
+      margin-right: 30px;
+      margin-left: 100px !important;
+  }
+
+  #mtbRoadCity input {
+      height: 30px;
+      width: 30px;
+      margin-left: 20px;
+      margin-top: 20px;
+  }
+
+  .spanCheckBox {
+      padding-left: 2px;
+  }
+
+  .labelCheckBox {
+      width: 800px;
+  }
+
+  .checkBoxMaleSearch,
+  .btnPrice,
+  .maleBikes,
+  .femaleBikes,
+  .childBikes {
+      margin-top: 15px;
+      width: 33.33%;
+      font-weight: 500;
+      font-size: 18px;
+      color: white;
+      background-color: #2d3436;
+      border: 1px solid black;
+  }
+
+  .btnMinMax {
+      float: left;
+  }
+
+  .checkBoxMaleSearch:hover {
+      background-color: #54d400;
+      color: black;
+  }
+
+  .checkBoxMaleSearch:focus {
+      outline: 0;
+  }
+
+  .checkBoxMaleSearch:active {
+      background-color: #2d3436;
+      color: black;
+  }
+
+  .btnPrice:hover {
+      background-color: #54d400;
+      color: black;
+  }
+
+  .btnPrice:focus {
+      outline: 0;
+  }
+
+  .btnPrice:active {
+      background-color: #2d3436;
+      color: black;
+  }
+
+  .maleBikes:hover {
+      background-color: #54d400;
+      color: black;
+  }
+
+  .maleBikes:focus {
+      outline: 0;
+  }
+
+  .maleBikes:active {
+      background-color: #2d3436;
+      color: black;
+  }
+
+  .femaleBikes:hover {
+      background-color: #54d400;
+      color: black;
+  }
+
+  .femaleBikes:focus {
+      outline: 0;
+  }
+
+  .femaleBikes:active {
+      background-color: #2d3436;
+      color: black;
+  }
+
+  .childBikes:active {
+      background-color: #2d3436;
+      color: black;
+  }
+
+  .childBikes:hover {
+      background-color: #54d400;
+      color: black;
+  }
+
+  .childBikes:focus {
+      outline: 0;
+  }
+
+  .childBikes:active {
+      background-color: #2d3436;
+      color: black;
+  }
+
+  section {
+      background-image: url("images/sectionBG.jpg");
+      background-size: auto;
+      background-repeat: repeat;
+      margin-top: 50px;
+  }
+
+  #displayBikesContainer div {
+      background: transparent;
+      color: white;
+      font-weight: 700;
+      font-size: 20px;
+      text-transform: uppercase;
+      margin-top: 20px;
+  }
+
+  .card {
+      border: 1px solid white;
+      margin-bottom: 5px;
+      background-color: black;
+  }
+
+  .card-body-text {
+      padding-top: 5px;
+      padding-left: 15px;
+      border: 1px solid white;
+      background-color: black;
+  }
+
+  .card-body-text:hover {
+      background-color: #54d400;
+      color: black;
+      text-decoration-color: black;
+      border: 1px solid black;
+  }
+
+  .image-card-body {
+      width: 100%;
+      height: 130%;
+  }
+
+  footer {
+      background: -webkit-linear-gradient(45deg, #54d400 48%, #1b1e21 48%);
+      background: -webkit-linear-gradient(left, #54d400 48%, #1b1e21 48%);
+      background: linear-gradient(45deg, #54d400 48%, #1b1e21 48%);
+      height: 60px;
+      text-align: left;
+      padding: 10px 10px 10px 10px;
+  }
+
+  .footer-span {
+      color: black;
+      font-size: 25px;
+      font-weight: 700;
+  }
+
+  @media only screen and (max-width: 700px) {
+      .modal-body {
+          background-size: 150%;
+          background-repeat: no-repeat;
+      }
+      .modal-dialog {
+          height: 50%;
+      }
+      .modalTextH4 {
+          font-size: 16px;
+          font-weight: 800;
+      }
+      .modalTextH3 {
+          font-size: 16px;
+          font-weight: 800;
+      }
+  }

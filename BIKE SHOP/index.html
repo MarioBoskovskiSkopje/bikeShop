@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.6/css/bootstrap.min.css" integrity="sha384-rwoIResjU2yc3z8GV/NPeZWAv56rSmLldC3R/AZzGRnGxQQKnKkoFVhFQhNUwEyJ"
+        crossorigin="anonymous">
+    <link href="https://fonts.googleapis.com/css?family=Gloria+Hallelujah|Roboto" rel="stylesheet">
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <title>BIKE SHOP</title>
+</head>
+
+<body>
+    <div class="top">
+        <header class="topbar"></header>
+        <nav class="navbar navbar-expand-lg navbar-dark mx-background-top-linear">
+            <div class="container" id="container-topbar">
+                <a class="navbar-brand" href="index.html"> BIKE SHOP </a>
+            </div>
+        </nav>
+    </div>
+    <div class="top-div">
+        <div class="container" id="container-btn">
+            <div class="row align-items-start">
+                <div class="col">
+                    <button type="button" class="btn-bikes" id="btnMaleBikes">Male Bikes </button>
+                </div>
+
+                <div class="col">
+                    <button type="button" class="btn-bikes" id="btnFemaleBikes">Female Bikes</button>
+
+                </div>
+                <div class="col">
+                    <button type="button" class="btn-bikes" id="btnChildBikes">Child Bikes</button>
+                </div>
+            </div>
+            <br>
+            <br>
+
+            <input type="text" id="searchByBrandName" placeholder="Search by Brand Name" maxlength="10">
+            <button id="searchByNameBtn" class="searchNameBtn">Search</button>
+
+            <div class="row" id="btnContainer">
+                <div class="btnMinMax">
+                    <button id="btnPriceMin" class="btnPrice">Price MIN</button>
+                    <button id="btnPriceMax" class="btnPrice">Price MAX</button>
+                    
+                </div>
+                <div class="container col-6 col-xs-2 col-sm-3 col-md-8 " id="mtbRoadCity">
+
+
+                    <p class="btnParagraph">Choose your bike by specific specs:</p>
+
+
+                    <button id="startSearchingBtn">Start Searching</button>
+
+                    
+                   
+                        <label class="labelCheckBox"></label><br>
+                        
+                       
+                    
+                    
+                         
+                </div>
+
+
+            </div>
+            <br>
+            <br>
+            <br>
+
+            <button id="refreshSearchingBtn">Refresh Searching</button> 
+        </div>
+        <section class="section">
+            <div class="container" id="displayBikesContainer"></div>
+        </section>
+
+    </div>
+
+
+
+
+
+
+
+
+
+
+
+
+    <script src="https://code.jquery.com/jquery-3.1.1.slim.min.js" integrity="sha384-A7FZj7v+d/sdmMqp/nOQwliLvUsJfDHW+k9Omg/a/EheAdgtzNs3hpfag6Ed950n"
+        crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/tether/1.4.0/js/tether.min.js" integrity="sha384-DztdAPBWPRXSA/3eYEEUWrWCy7G5KFbe8fFjk5JAIxUYHKkDx6Qin1DkWx51bBrb"
+        crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.6/js/bootstrap.min.js" integrity="sha384-vBWWzlZJ8ea9aCX4pEW3rVHjgjt7zpkNpZk+02D9phzyeVkE+jo0ieGizqPLForn"
+        crossorigin="anonymous"></script>
+    <script src="script.js"></script>
+</body>
+
+</html>
