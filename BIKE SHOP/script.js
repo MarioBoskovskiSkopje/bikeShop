@@ -732,6 +732,8 @@ $(document).ready(function () {
             }
         ];
 
+       
+
         const filteredMaleBikes = bikes.filter(element => {
             return element.genre === "male";
         });
@@ -811,7 +813,12 @@ $(document).ready(function () {
                 $(".radioBtnFemale").removeClass("active").hide();
                 $(".radioBtnMale").addClass("active").hide();
 
-                bikesCheckBox();
+               bikesCheckBox();
+
+               $("#steel").hide();
+               
+                 $(".steel").hide();
+                
             });
 
             $(".radioBtnFemale").click(() => {
@@ -819,6 +826,18 @@ $(document).ready(function () {
                 $(".radioBtnFemale").addClass("active").hide();
 
                 bikesCheckBox();
+
+                $("#steel").hide();
+                $("#carbon").hide();
+                $("#Wheels-27_5inch").hide();
+                $("#Wheels-29inch").hide();
+
+                $(".steel").hide();
+                $(".carbon").hide();
+                $(".Wheels-27_5inch").hide();
+                $(".Wheels-29inch").hide();
+
+                $(".labelCheckBox").width('700px');
             });
 
         });
@@ -829,7 +848,7 @@ $(document).ready(function () {
 
         function bikesCheckBox() {
 
-            let bikesSpecs = ["mtb", "road", "city", "160-175cm", "175-190cm", "190-210+cm", "carbon", "aluminum", "steel", "Wheels-26inch", "Wheels-27_5inch", "Wheels-29inch"];
+            let bikesSpecs = ["mtb", "road", "city", "160-175cm", "175-190cm", "190-210cm", "carbon", "aluminum", "steel", "Wheels-26inch", "Wheels-29inch"];
 
 
 
@@ -846,8 +865,8 @@ $(document).ready(function () {
                     })
                     .prop('checked', false)
                     .appendTo(".labelCheckBox")
-                    .addClass(element)
-                    .attr("id", element);
+                    .addClass(element);
+
 
 
 
@@ -856,7 +875,8 @@ $(document).ready(function () {
                     .css("text-transform", "uppercase")
                     .addClass("spanCheckBox")
                     .html(element)
-                    .appendTo(".labelCheckBox");
+                    .appendTo(".labelCheckBox")
+                    .attr("id", element);
 
 
 
@@ -864,178 +884,350 @@ $(document).ready(function () {
             });
 
 
-            $(".labelCheckBox").click(() => {
-
-                $("#displayBikesContainer").html("");
-
-
-                /////////////////////// filters for female bikes ///////////////////////
-
-                const mtbFemale = filteredFemaleBikes.filter(element => {
-                    return element.kind === "mtb";
-                });
-
-                const roadFemale = filteredFemaleBikes.filter(element => {
-                    return element.kind === "road";
-                });
-
-                const cityFemale = filteredFemaleBikes.filter(element => {
-                    return element.kind === "city";
-                });
-
-                const citySmallFemale = cityFemale.filter(element => {
-                    return element.ramSizeSmall === "Yes";
-                });
-                const cityWheelsFemale = citySmallFemale.filter(element => {
-                    return element.wheels === "26 inch";
-                });
-                const cityAluFemale = cityWheelsFemale.filter(element => {
-                    return element.material === "alu";
-                });
-
-
-                const roadSmallFemale = roadFemale.filter(element => {
-                    return element.ramSizeSmall === "Yes";
-                });
-                const roadWheelsFemale = roadSmallFemale.filter(element => {
-                    return element.wheels === "26 inch";
-                });
-                const roadAluFemale = roadWheelsFemale.filter(element => {
-                    return element.material === "alu";
-                });
-
-                const roadCarbonFemale = roadWheelsFemale.filter(element => {
-                    return element.material === "carbon";
-                });
-
-                const mtbSmallFemale = mtbFemale.filter(element => {
-                    return element.ramSizeSmall === "Yes";
-                });
-                const smallWheelsMtbFemale = mtbSmallFemale.filter(element => {
-                    return element.wheels === "26 inch";
-                });
-                const smallAluFemale = smallWheelsMtbFemale.filter(element => {
-                    return element.material === "alu";
-                });
-
-
-
-
-
-                ///////////////////////////////// radio btn female bikes, and check checkboxes//////////////
-
-
-                if ($(".radioBtnFemale").hasClass("active")) {
-
-                    if ($(".mtb").is(':checked') &&
-                        ($(".160-175cm").is(':checked') &&
-                            ($(".aluminum").is(':checked') &&
-                                ($(".Wheels-26inch").is(':checked'))))) {
-
-                        showBikesDiv(smallAluFemale);
-
-                    } else if ($(".road").is(':checked') &&
-                        ($(".160-175cm").is(':checked') &&
-                            ($(".aluminum").is(':checked') &&
-                                ($(".Wheels-26inch").is(':checked'))))) {
-
-                        showBikesDiv(roadAluFemale);
-
-
-                    } else if ($(".road").is(':checked') &&
-                        ($(".160-175cm").is(':checked') &&
-                            ($(".carbon").is(':checked') &&
-                                ($(".Wheels-26inch").is(':checked'))))) {
-
-                        showBikesDiv(roadCarbonFemale);
-
-
-                    } else if ($(".city").is(':checked') &&
-                        ($(".160-175cm").is(':checked') &&
-                            ($(".aluminum").is(':checked') &&
-                                ($(".Wheels-26inch").is(':checked'))))) {
-
-                        showBikesDiv(cityAluFemale);
-
-
-                    }
-
-
-                }
-
-                /////////////////////////////////// filters for male bikes ///////////////////////
-
-                ///////////////////////////////////// mtb //////////////////////////////
-
-                const mtbMaleBikes = filteredMaleBikes.filter(element => {
-                    return element.kind === "mtb";
-                })
-
-                const smallMtbMaleBikes = mtbMaleBikes.filter(element => {
-                    return element.ramSizeSmall === "Yes";
-                })
-
-                const smallWheelsMtbMaleBikes = smallMtbMaleBikes.filter(element => {
-                    return element.wheels === "26 inch";
-                })
-
-                const smallAluMale = smallWheelsMtbMaleBikes.filter(element => {
-                    return element.material === "alu";
-                })
-
-                //////////////////////////////////////////////////// road ///////////////////
-
-                const roadMaleBikes = filteredMaleBikes.filter(element => {
-                    return element.kind === "road";
-                })
-
-                const smallRoadMaleBikes = roadMaleBikes.filter(element => {
-                    return element.ramSizeSmall === "Yes";
-                })
-
-                const smallWheelsRoadMaleBikes = smallRoadMaleBikes.filter(element => {
-                    return element.wheels === "26 inch";
-                })
-
-                const smallAluRoadMale = smallWheelsRoadMaleBikes.filter(element => {
-                    return element.material === "alu";
-                })
-
-
-
-
-                ////////////////////////////////////// male bikes radiobtn and check checkboxes ////////////////// 
-
-
-
-                if ($(".radioBtnMale").hasClass("active")) {
-                    if ($(".mtb").is(':checked') &&
-                        ($(".160-175cm").is(':checked') &&
-                            ($(".aluminum").is(':checked') &&
-                                ($(".Wheels-26inch").is(':checked'))))) {
-
-                        showBikesDiv(smallAluMale);
-
-                    } else if ($(".road").is(':checked') &&
-                        ($(".160-175cm").is(':checked') &&
-                            ($(".aluminum").is(':checked') &&
-                                ($(".Wheels-26inch").is(':checked'))))) {
-
-                        showBikesDiv(smallAluRoadMale);
-
-                    } else if ($(".road").is(':checked') &&
-                        ($(".175cm-190").is(':checked') &&
-                            ($(".carbon").is(':checked') &&
-                                ($(".Wheels-26inch").is(':checked'))))) {
-
-                        showBikesDiv(mediumCarbonRoadMale);
-
-                    }
-                }
-
-            })
-
         }
+
+        $(".labelCheckBox").click(() => {
+
+            $("#displayBikesContainer").html("");
+
+
+            /////////////////////// filters for female bikes ///////////////////////
+
+            const mtbFemale = filteredFemaleBikes.filter(element => {
+                return element.kind === "mtb";
+            });
+
+            const aluMtbFemale = mtbFemale.filter(element => {
+                return element.material === "alu";
+            });
+
+            const inch26MtbFemale = aluMtbFemale.filter(element => {
+                return element.wheels === "26 inch";
+            });
+
+            const inch27_5MtbFemale = aluMtbFemale.filter(element => {
+                return element.wheels === "27.5 inch";
+            });
+
+            const inch29MtbFemale = aluMtbFemale.filter(element => {
+                return element.wheels === "29 inch";
+            });
+
+            const smallMtbFemale = inch26MtbFemale.filter(element => {
+                return element.ramSizeSmall === "Yes";
+            });
+
+            const mediumMtbFemale = inch26MtbFemale.filter(element => {
+                return element.ramSizeMedium === "Yes";
+            });
+
+            const bigMtbFemale = inch26MtbFemale.filter(element => {
+                return element.ramSizeBig === "Yes";
+            });
+
+            const roadFemale = filteredFemaleBikes.filter(element => {
+                return element.kind === "road";
+            });
+
+            const aluRoadFemale = roadFemale.filter(element => {
+                return element.material === "alu";
+            });
+
+            const smallAluRoadFemale = roadFemale.filter(element => {
+                return element.ramSizeSmall === "Yes";
+            });
+
+            const mediumAluRoadFemale = roadFemale.filter(element => {
+                return element.ramSizeMedium === "Yes";
+            });
+
+            const bigAluRoadFemale = roadFemale.filter(element => {
+                return element.ramSizeBig === "Yes";
+            });
+
+            const smallRoadAlu26inch = smallAluRoadFemale.filter(element => {
+                return element.wheels === "26 inch";
+            });
+
+            const mediumRoadAlu26inch = mediumAluRoadFemale.filter(element => {
+                return element.wheels === "26 inch";
+            });
+
+            const bigRoadAlu26inch = bigAluRoadFemale.filter(element => {
+                return element.wheels === "26 inch";
+            });
+
+            const cityFemale = filteredFemaleBikes.filter(element => {
+                return element.kind === "city";
+            });
+
+            const aluCityFemale = cityFemale.filter(element => {
+                return element.material === "alu";
+            });
+
+            const smallAluCityFemale = aluCityFemale.filter(element => {
+                return element.ramSizeSmall === "Yes";
+            });
+
+            const mediumAluCityFemale = aluCityFemale.filter(element => {
+                return element.ramSizeMedium === "Yes";
+            });
+
+            const bigAluCityFemale = aluCityFemale.filter(element => {
+                return element.ramSizeBig === "Yes";
+            });
+
+            const small26inchCityFemale = smallAluCityFemale.filter(element => {
+                return element.wheels === "26 inch";
+            });
+
+            const medium26inchCityFemale = mediumAluCityFemale.filter(element => {
+                return element.wheels === "26 inch";
+            });
+
+            const big26inchCityFemale = bigAluCityFemale.filter(element => {
+                return element.wheels === "26 inch";
+            });
+
+
+            ////////////////////////////////////// filters for male bikees //////////////////////
+
+
+            const mtbMaleBikes = filteredMaleBikes.filter(el => {
+                return el.kind === "mtb";
+            });
+
+            const smallMaleMtbBikes = mtbMaleBikes.filter(el => {
+                return el.ramSizeSmall === "Yes";
+            });
+
+            const mediumMaleMtbBikes = mtbMaleBikes.filter(el => {
+                return el.ramSizeMedium === "Yes";
+            });
+
+            const bigMaleMtbBikes = mtbMaleBikes.filter(el => {
+                return el.ramSizeBig === "Yes";
+            });
+
+            const small26inchMtbMaleBikes = smallMaleMtbBikes.filter(el => {
+                return el.wheels === "26 inch";
+            });
+
+            const small27_5inchMtbMaleBikes = smallMaleMtbBikes.filter(el => {
+                return el.wheels === "27.5 inch";
+            });
+
+            const small29inchMtbMaleBikes = smallMaleMtbBikes.filter(el => {
+                return el.wheels === "29 inch";
+            });
+
+            const medium29inchMtbMaleBikes = mediumMaleMtbBikes.filter(el => {
+                return el.wheels === "29 inch";
+            });
+
+            const big29inchMtbMaleBikes = bigMaleMtbBikes.filter(el => {
+                return el.wheels === "29 inch";
+            });
+
+            const roadMaleBikes = filteredMaleBikes.filter(el => {
+                return el.kind === "road";
+            });
+
+            const carbonRoadMaleBikes = roadMaleBikes.filter(el => {
+                return el.material === "carbon";
+            });
+
+            const inch26RoadCarbonMaleBikes = carbonRoadMaleBikes.filter(el => {
+                return el.wheels === "26 inch";
+            });
+
+            const smallInch26RoadCarbonMaleBikes = inch26RoadCarbonMaleBikes.filter(el => {
+                return el.ramSizeSmall === "Yes";
+            });
+
+            const mediumInch26RoadCarbonMaleBikes = inch26RoadCarbonMaleBikes.filter(el => {
+                return el.ramSizeMedium === "Yes";
+            });
+
+            const bigInch26RoadCarbonMaleBikes = inch26RoadCarbonMaleBikes.filter(el => {
+                return el.ramSizeBig === "Yes";
+            });
+
+            const cityMaleBikes = filteredMaleBikes.filter(el => {
+                return el.kind === "city";
+            });
+
+            const smallCityMale = cityMaleBikes.filter(el => {
+                return el.ramSizeSmall === "Yes";
+            });
+
+            const mediumCityMale = cityMaleBikes.filter(el => {
+                return el.ramSizeMedium === "Yes";
+            });
+
+            const bigCityMale = cityMaleBikes.filter(el => {
+                return el.ramSizeBig === "Yes";
+            });
+
+
+
+            ///////////////////////////////// radio btn female,male bikes, and check checkboxes//////////////
+
+
+
+
+            if ($(".radioBtnFemale").hasClass("active")) {
+
+
+
+
+                if ($(".mtb").is(':checked')) {
+                    if ($(".160-175cm").is(':checked')) {
+                        if (($(".aluminum").is(':checked')) &&
+                            ($(".Wheels-26inch").is(':checked'))) {
+                            showBikesDiv(smallMtbFemale);
+                        }
+
+                    }
+
+                    if ($(".175-190cm").is(':checked')) {
+                        if (($(".aluminum").is(':checked')) &&
+                            ($(".Wheels-26inch").is(':checked'))) {
+                            showBikesDiv(mediumMtbFemale);
+                        }
+
+                    }
+                    if ($(".190-210cm").is(':checked')) {
+                        if (($(".aluminum").is(':checked')) &&
+                            ($(".Wheels-26inch").is(':checked'))) {
+                            showBikesDiv(bigMtbFemale);
+                        }
+                    }
+
+
+
+                }
+
+                if ($(".road").is(':checked')) {
+                    if ($(".160-175cm").is(':checked')) {
+                        if (($(".aluminum").is(':checked')) &&
+                            ($(".Wheels-26inch").is(':checked'))) {
+                            showBikesDiv(smallRoadAlu26inch);
+                        }
+
+                    }
+
+                    if ($(".175-190cm").is(':checked')) {
+                        if (($(".aluminum").is(':checked')) &&
+                            ($(".Wheels-26inch").is(':checked'))) {
+                            showBikesDiv(mediumRoadAlu26inch);
+                        }
+
+                    }
+                    if ($(".190-210cm").is(':checked')) {
+                        if (($(".aluminum").is(':checked')) &&
+                            ($(".Wheels-26inch").is(':checked'))) {
+                            showBikesDiv(bigRoadAlu26inch);
+                        }
+                    }
+                }
+
+                if ($(".city").is(':checked')) {
+
+                    if ($(".160-175cm").is(':checked')) {
+                        if (($(".aluminum").is(':checked')) &&
+                            ($(".Wheels-26inch").is(':checked'))) {
+                            showBikesDiv(small26inchCityFemale);
+                        }
+                    }
+                    if ($(".175-190cm").is(':checked')) {
+                        if (($(".aluminum").is(':checked')) &&
+                            ($(".Wheels-26inch").is(':checked'))) {
+                            showBikesDiv(medium26inchCityFemale);
+                        }
+                    }
+                    if ($(".190-210cm").is(':checked')) {
+                        if (($(".aluminum").is(':checked')) &&
+                            ($(".Wheels-26inch").is(':checked'))) {
+                            showBikesDiv(big26inchCityFemale);
+                        }
+                    }
+                }
+            }
+
+            
+            if ($(".radioBtnMale").hasClass("active")) {
+                if ($(".mtb").is(':checked')) {
+                    if ($(".160-175cm").is(':checked')) {
+                        if (($(".aluminum").is(':checked')) &&
+                            ($(".Wheels-26inch").is(':checked'))) {
+                            showBikesDiv(small26inchMtbMaleBikes);
+                        }
+                    }
+                    if ($(".175-190cm").is(':checked')) {
+                        if (($(".aluminum").is(':checked')) &&
+                            ($(".Wheels-29inch").is(':checked'))) {
+                            showBikesDiv(medium29inchMtbMaleBikes);
+
+                        }
+                    }
+                    if ($(".190-210cm").is(':checked')) {
+                        if (($(".aluminum").is(':checked')) &&
+                            ($(".Wheels-29inch").is(':checked'))) {
+                            showBikesDiv(big29inchMtbMaleBikes);
+                        }
+
+
+                    }
+
+                }
+
+                if ($(".road").is(':checked')) {
+                    if ($(".160-175cm").is(':checked')) {
+                        if (($(".carbon").is(':checked')) &&
+                            ($(".Wheels-26inch").is(':checked'))) {
+                            showBikesDiv(smallInch26RoadCarbonMaleBikes);
+                        }
+                    }
+                    if ($(".175-190cm").is(':checked')) {
+                        if (($(".carbon").is(':checked')) &&
+                            ($(".Wheels-26inch").is(':checked'))) {
+                            showBikesDiv(mediumInch26RoadCarbonMaleBikes);
+
+                        }
+                    }
+                    if ($(".190-210cm").is(':checked')) {
+                        if (($(".carbon").is(':checked')) &&
+                            ($(".Wheels-26inch").is(':checked'))) {
+                            showBikesDiv(bigInch26RoadCarbonMaleBikes);
+                        }
+
+
+                    }
+                }
+
+                if ($(".city").is(':checked')) {
+                    if ($(".160-175cm").is(':checked')) {
+                        {
+                            showBikesDiv(smallCityMale);
+                        }
+                    }
+                    if ($(".175-190cm").is(':checked')) {
+                        {
+                            showBikesDiv(mediumCityMale);
+                        }
+                    }
+                    if ($(".190-210cm").is(':checked')) {
+                        {
+                            showBikesDiv(bigCityMale);
+                        }
+                    }
+                }
+            }
+
+        })
+
+
 
 
 
@@ -1199,32 +1391,39 @@ $(document).ready(function () {
 
 
         //////////////////////////////////////////////////// search input and bnt ////////////////////
-        
+
 
         const searchBtnByName = $("#searchByNameBtn");
 
         searchBtnByName.click(() => {
-            
+
             $("#displayBikesContainer").html("");
 
-            let inputValue = $("#searchByBrandName").val();
+            let inputValue = $("#searchByBrandName").val().trim().toLowerCase();
+
+            bikes.map((a) => { 
+                a.model = a.model.toLowerCase();
+                return a;
+            });
+          
 
             let filterBikes;
 
-           
+            filterBikes = bikes.filter((bikes) => {
 
-           filterBikes = bikes.filter(function(bikes){
-               
-            if(bikes.model.indexOf(inputValue) > -1){
-                return bikes;
-               }
-               
-              
+                if (bikes.model.indexOf(inputValue) > -1) {
+                    return bikes;
+                }
+
+
             });
+
+            
+            console.log(inputValue);
 
             showBikesDiv(filterBikes);
 
-         
+
 
         })
 
