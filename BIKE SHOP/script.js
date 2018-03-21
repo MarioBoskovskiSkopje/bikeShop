@@ -732,20 +732,15 @@ $(document).ready(function () {
             }
         ];
 
-       
+        
 
-        const filteredMaleBikes = bikes.filter(element => {
-            return element.genre === "male";
-        });
+        const filteredMaleBikes = bikes.filter(element => element.genre === "male");
 
-        const filteredFemaleBikes = bikes.filter(element => {
-            return element.genre === "female";
-        });
+        const filteredFemaleBikes = bikes.filter(element => element.genre === "female");
 
-        const filteredChildBikes = bikes.filter(element => {
-            return element.genre === "child";
-        });
+        const filteredChildBikes = bikes.filter(element => element.genre === "child");
 
+        let searchedUserBikesArray = [];
 
 
         function showBikesDiv(filteredMaleBikes, filteredFemaleBikes, filteredChildBikes) {
@@ -893,181 +888,95 @@ $(document).ready(function () {
 
             /////////////////////// filters for female bikes ///////////////////////
 
-            const mtbFemale = filteredFemaleBikes.filter(element => {
-                return element.kind === "mtb";
-            });
+            const mtbFemale = filteredFemaleBikes.filter(element => element.kind === "mtb" );
 
-            const aluMtbFemale = mtbFemale.filter(element => {
-                return element.material === "alu";
-            });
+            const aluMtbFemale = mtbFemale.filter(element => element.material === "alu" );
 
-            const inch26MtbFemale = aluMtbFemale.filter(element => {
-                return element.wheels === "26 inch";
-            });
+            const inch26MtbFemale = aluMtbFemale.filter(element => element.wheels === "26 inch");
 
-            const inch27_5MtbFemale = aluMtbFemale.filter(element => {
-                return element.wheels === "27.5 inch";
-            });
+            const inch27_5MtbFemale = aluMtbFemale.filter(element => element.wheels === "27.5 inch");
 
-            const inch29MtbFemale = aluMtbFemale.filter(element => {
-                return element.wheels === "29 inch";
-            });
+            const inch29MtbFemale = aluMtbFemale.filter(element =>element.wheels === "29 inch");
 
-            const smallMtbFemale = inch26MtbFemale.filter(element => {
-                return element.ramSizeSmall === "Yes";
-            });
+            const smallMtbFemale = inch26MtbFemale.filter(element => element.ramSizeSmall === "Yes");
 
-            const mediumMtbFemale = inch26MtbFemale.filter(element => {
-                return element.ramSizeMedium === "Yes";
-            });
+            const mediumMtbFemale = inch26MtbFemale.filter(element =>element.ramSizeMedium === "Yes");
 
-            const bigMtbFemale = inch26MtbFemale.filter(element => {
-                return element.ramSizeBig === "Yes";
-            });
+            const bigMtbFemale = inch26MtbFemale.filter(element => element.ramSizeBig === "Yes");
 
-            const roadFemale = filteredFemaleBikes.filter(element => {
-                return element.kind === "road";
-            });
+            const roadFemale = filteredFemaleBikes.filter(element => element.kind === "road");
 
-            const aluRoadFemale = roadFemale.filter(element => {
-                return element.material === "alu";
-            });
+            const aluRoadFemale = roadFemale.filter(element =>element.material === "alu");
 
-            const smallAluRoadFemale = roadFemale.filter(element => {
-                return element.ramSizeSmall === "Yes";
-            });
+            const smallAluRoadFemale = roadFemale.filter(element => element.ramSizeSmall === "Yes");
 
-            const mediumAluRoadFemale = roadFemale.filter(element => {
-                return element.ramSizeMedium === "Yes";
-            });
+            const mediumAluRoadFemale = roadFemale.filter(element => element.ramSizeMedium === "Yes");
 
-            const bigAluRoadFemale = roadFemale.filter(element => {
-                return element.ramSizeBig === "Yes";
-            });
+            const bigAluRoadFemale = roadFemale.filter(element => element.ramSizeBig === "Yes");
 
-            const smallRoadAlu26inch = smallAluRoadFemale.filter(element => {
-                return element.wheels === "26 inch";
-            });
+            const smallRoadAlu26inch = smallAluRoadFemale.filter(element => element.wheels === "26 inch");
 
-            const mediumRoadAlu26inch = mediumAluRoadFemale.filter(element => {
-                return element.wheels === "26 inch";
-            });
+            const mediumRoadAlu26inch = mediumAluRoadFemale.filter(element => element.wheels === "26 inch");
 
-            const bigRoadAlu26inch = bigAluRoadFemale.filter(element => {
-                return element.wheels === "26 inch";
-            });
+            const bigRoadAlu26inch = bigAluRoadFemale.filter(element => element.wheels === "26 inch");
 
-            const cityFemale = filteredFemaleBikes.filter(element => {
-                return element.kind === "city";
-            });
+            const cityFemale = filteredFemaleBikes.filter(element => element.kind === "city");
 
-            const aluCityFemale = cityFemale.filter(element => {
-                return element.material === "alu";
-            });
+            const aluCityFemale = cityFemale.filter(element => element.material === "alu");
 
-            const smallAluCityFemale = aluCityFemale.filter(element => {
-                return element.ramSizeSmall === "Yes";
-            });
+            const smallAluCityFemale = aluCityFemale.filter(element => element.ramSizeSmall === "Yes");
 
-            const mediumAluCityFemale = aluCityFemale.filter(element => {
-                return element.ramSizeMedium === "Yes";
-            });
+            const mediumAluCityFemale = aluCityFemale.filter(element => element.ramSizeMedium === "Yes");
 
-            const bigAluCityFemale = aluCityFemale.filter(element => {
-                return element.ramSizeBig === "Yes";
-            });
+            const bigAluCityFemale = aluCityFemale.filter(element => element.ramSizeBig === "Yes");
 
-            const small26inchCityFemale = smallAluCityFemale.filter(element => {
-                return element.wheels === "26 inch";
-            });
+            const small26inchCityFemale = smallAluCityFemale.filter(element => element.wheels === "26 inch");
 
-            const medium26inchCityFemale = mediumAluCityFemale.filter(element => {
-                return element.wheels === "26 inch";
-            });
+            const medium26inchCityFemale = mediumAluCityFemale.filter(element => element.wheels === "26 inch");
 
-            const big26inchCityFemale = bigAluCityFemale.filter(element => {
-                return element.wheels === "26 inch";
-            });
+            const big26inchCityFemale = bigAluCityFemale.filter(element => element.wheels === "26 inch");
 
 
             ////////////////////////////////////// filters for male bikees //////////////////////
 
 
-            const mtbMaleBikes = filteredMaleBikes.filter(el => {
-                return el.kind === "mtb";
-            });
+            const mtbMaleBikes = filteredMaleBikes.filter(el => el.kind === "mtb");
 
-            const smallMaleMtbBikes = mtbMaleBikes.filter(el => {
-                return el.ramSizeSmall === "Yes";
-            });
+            const smallMaleMtbBikes = mtbMaleBikes.filter(el => el.ramSizeSmall === "Yes");
 
-            const mediumMaleMtbBikes = mtbMaleBikes.filter(el => {
-                return el.ramSizeMedium === "Yes";
-            });
+            const mediumMaleMtbBikes = mtbMaleBikes.filter(el =>el.ramSizeMedium === "Yes");
 
-            const bigMaleMtbBikes = mtbMaleBikes.filter(el => {
-                return el.ramSizeBig === "Yes";
-            });
+            const bigMaleMtbBikes = mtbMaleBikes.filter(el => el.ramSizeBig === "Yes");
 
-            const small26inchMtbMaleBikes = smallMaleMtbBikes.filter(el => {
-                return el.wheels === "26 inch";
-            });
+            const small26inchMtbMaleBikes = smallMaleMtbBikes.filter(el => el.wheels === "26 inch");
 
-            const small27_5inchMtbMaleBikes = smallMaleMtbBikes.filter(el => {
-                return el.wheels === "27.5 inch";
-            });
+            const small27_5inchMtbMaleBikes = smallMaleMtbBikes.filter(el => el.wheels === "27.5 inch");
 
-            const small29inchMtbMaleBikes = smallMaleMtbBikes.filter(el => {
-                return el.wheels === "29 inch";
-            });
+            const small29inchMtbMaleBikes = smallMaleMtbBikes.filter(el => el.wheels === "29 inch");
 
-            const medium29inchMtbMaleBikes = mediumMaleMtbBikes.filter(el => {
-                return el.wheels === "29 inch";
-            });
+            const medium29inchMtbMaleBikes = mediumMaleMtbBikes.filter(el => el.wheels === "29 inch");
 
-            const big29inchMtbMaleBikes = bigMaleMtbBikes.filter(el => {
-                return el.wheels === "29 inch";
-            });
+            const big29inchMtbMaleBikes = bigMaleMtbBikes.filter(el => el.wheels === "29 inch");
 
-            const roadMaleBikes = filteredMaleBikes.filter(el => {
-                return el.kind === "road";
-            });
+            const roadMaleBikes = filteredMaleBikes.filter(el => el.kind === "road");
 
-            const carbonRoadMaleBikes = roadMaleBikes.filter(el => {
-                return el.material === "carbon";
-            });
+            const carbonRoadMaleBikes = roadMaleBikes.filter(el => el.material === "carbon");
 
-            const inch26RoadCarbonMaleBikes = carbonRoadMaleBikes.filter(el => {
-                return el.wheels === "26 inch";
-            });
+            const inch26RoadCarbonMaleBikes = carbonRoadMaleBikes.filter(el => el.wheels === "26 inch");
 
-            const smallInch26RoadCarbonMaleBikes = inch26RoadCarbonMaleBikes.filter(el => {
-                return el.ramSizeSmall === "Yes";
-            });
+            const smallInch26RoadCarbonMaleBikes = inch26RoadCarbonMaleBikes.filter(el => el.ramSizeSmall === "Yes");
 
-            const mediumInch26RoadCarbonMaleBikes = inch26RoadCarbonMaleBikes.filter(el => {
-                return el.ramSizeMedium === "Yes";
-            });
+            const mediumInch26RoadCarbonMaleBikes = inch26RoadCarbonMaleBikes.filter(el => el.ramSizeMedium === "Yes");
 
-            const bigInch26RoadCarbonMaleBikes = inch26RoadCarbonMaleBikes.filter(el => {
-                return el.ramSizeBig === "Yes";
-            });
+            const bigInch26RoadCarbonMaleBikes = inch26RoadCarbonMaleBikes.filter(el => el.ramSizeBig === "Yes");
 
-            const cityMaleBikes = filteredMaleBikes.filter(el => {
-                return el.kind === "city";
-            });
+            const cityMaleBikes = filteredMaleBikes.filter(el => el.kind === "city");
 
-            const smallCityMale = cityMaleBikes.filter(el => {
-                return el.ramSizeSmall === "Yes";
-            });
+            const smallCityMale = cityMaleBikes.filter(el => el.ramSizeSmall === "Yes");
 
-            const mediumCityMale = cityMaleBikes.filter(el => {
-                return el.ramSizeMedium === "Yes";
-            });
+            const mediumCityMale = cityMaleBikes.filter(el =>el.ramSizeMedium === "Yes");
 
-            const bigCityMale = cityMaleBikes.filter(el => {
-                return el.ramSizeBig === "Yes";
-            });
+            const bigCityMale = cityMaleBikes.filter(el => el.ramSizeBig === "Yes");
 
 
 
@@ -1225,25 +1134,28 @@ $(document).ready(function () {
                 }
             }
 
-        })
+        });
 
 
-
+        
 
 
         ///////////////////////// min and max price btn ////////////////////////////////
 
         minPriceBtn.click(() => {
-            sortingMin();
-
-
-
+            if (searchedUserBikesArray.length > 0) {
+                sortSearchedBikesMin(searchedUserBikesArray);
+            } else {
+                sortingMin();
+            }
         })
 
         maxPriceBtn.click(() => {
-            sortingMax();
-
-
+            if (searchedUserBikesArray.length > 0) {
+                sortSearchedBikesMax(searchedUserBikesArray);
+            } else {
+                sortingMax();
+            }
         })
 
         function sortingMin() {
@@ -1264,12 +1176,12 @@ $(document).ready(function () {
                 showBikesDiv(minPriceBikesChild);
             }
 
+            
+           
 
+        };
 
-
-        }
-
-        function sortingMax() {
+        function sortingMax(arrayToBeSorted) {
 
 
 
@@ -1286,17 +1198,22 @@ $(document).ready(function () {
                 let maxPriceBikesChild = filteredChildBikes.sort((a, b) => b.price - a.price);
                 showBikesDiv(maxPriceBikesChild);
             }
+           
+           
 
-
-        }
+        };
 
 
 
         ///////////////////////////// refresh search results ////////////////////
 
         $("#refreshSearchingBtn").click(() => {
-            location.reload();
-        })
+            $(".labelCheckBox").html("");
+            $("#startSearchingBtn").show();
+
+            $(".radioBtnMale").hide();
+            $(".radioBtnFemale").hide();
+        });
 
 
 
@@ -1392,40 +1309,39 @@ $(document).ready(function () {
 
         //////////////////////////////////////////////////// search input and bnt ////////////////////
 
+       
 
-        const searchBtnByName = $("#searchByNameBtn");
+       
+
+        let searchBtnByName = $("#searchByNameBtn");
 
         searchBtnByName.click(() => {
 
-            $("#displayBikesContainer").html("");
+           
+           $("#displayBikesContainer").html("");
 
             let inputValue = $("#searchByBrandName").val().trim().toLowerCase();
 
-            bikes.map((a) => { 
-                a.model = a.model.toLowerCase();
-                return a;
-            });
-          
+            if(inputValue === "") return;
 
-            let filterBikes;
+            searchedUserBikesArray = bikes.filter((bikes) => bikes.model.toLowerCase().indexOf(inputValue) > -1);
+               
+            showBikesDiv(searchedUserBikesArray);
 
-            filterBikes = bikes.filter((bikes) => {
-
-                if (bikes.model.indexOf(inputValue) > -1) {
-                    return bikes;
-                }
-
-
+            $('#searchByBrandName').val('');
             });
 
-            
-            console.log(inputValue);
+            function sortSearchedBikesMax(arrayToBeSorted) {
+                let sortedArray = arrayToBeSorted.sort((a, b) => b.price - a.price);
+                showBikesDiv(sortedArray);
+            }
+            function sortSearchedBikesMin(arrayToBeSorted) {
+                let sortedArray = arrayToBeSorted.sort((a, b) => a.price - b.price);
+                showBikesDiv(sortedArray);
+            }
+           
 
-            showBikesDiv(filterBikes);
-
-
-
-        })
+        window.onload = () => $("#searchByBrandName").focus();
 
     })();
 });
