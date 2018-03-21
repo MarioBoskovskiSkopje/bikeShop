@@ -745,7 +745,7 @@ $(document).ready(function () {
 
         function showBikesDiv(filteredMaleBikes, filteredFemaleBikes, filteredChildBikes) {
             ////////////////////////// function for male bikes to show in div //////////////////////
-
+            $("#displayBikesContainer").html("");
 
             const bikesDiv = $("<div>").addClass("row").appendTo("#displayBikesContainer");
 
@@ -1322,7 +1322,10 @@ $(document).ready(function () {
 
             let inputValue = $("#searchByBrandName").val().trim().toLowerCase();
 
-            if(inputValue === "") return;
+            if(inputValue === ""){
+                searchedUserBikesArray = [];
+                return;
+            }
 
             searchedUserBikesArray = bikes.filter((bikes) => bikes.model.toLowerCase().indexOf(inputValue) > -1);
                
