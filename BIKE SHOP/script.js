@@ -732,13 +732,29 @@ $(document).ready(function () {
             }
         ];
 
-        
+
 
         const filteredMaleBikes = bikes.filter(element => element.genre === "male");
 
         const filteredFemaleBikes = bikes.filter(element => element.genre === "female");
 
         const filteredChildBikes = bikes.filter(element => element.genre === "child");
+
+        const mtbFemale = filteredFemaleBikes.filter(element => element.kind === "mtb");
+
+        const roadFemale = filteredFemaleBikes.filter(element => element.kind === "road");
+
+        const cityFemale = filteredFemaleBikes.filter(element => element.kind === "city");
+
+        const roadMaleBikes = filteredMaleBikes.filter(el => el.kind === "road");
+
+        const mtbMaleBikes = filteredMaleBikes.filter(el => el.kind === "mtb");
+
+        const cityMaleBikes = filteredMaleBikes.filter(el => el.kind === "city");
+
+
+
+
 
         let searchedUserBikesArray = [];
 
@@ -808,12 +824,12 @@ $(document).ready(function () {
                 $(".radioBtnFemale").removeClass("active").hide();
                 $(".radioBtnMale").addClass("active").hide();
 
-               bikesCheckBox();
+                bikesCheckBox();
 
-               $("#steel").hide();
-               
-                 $(".steel").hide();
-                
+                $("#steel").hide();
+
+                $(".steel").hide();
+
             });
 
             $(".radioBtnFemale").click(() => {
@@ -888,25 +904,23 @@ $(document).ready(function () {
 
             /////////////////////// filters for female bikes ///////////////////////
 
-            const mtbFemale = filteredFemaleBikes.filter(element => element.kind === "mtb" );
 
-            const aluMtbFemale = mtbFemale.filter(element => element.material === "alu" );
+
+            const aluMtbFemale = mtbFemale.filter(element => element.material === "alu");
 
             const inch26MtbFemale = aluMtbFemale.filter(element => element.wheels === "26 inch");
 
             const inch27_5MtbFemale = aluMtbFemale.filter(element => element.wheels === "27.5 inch");
 
-            const inch29MtbFemale = aluMtbFemale.filter(element =>element.wheels === "29 inch");
+            const inch29MtbFemale = aluMtbFemale.filter(element => element.wheels === "29 inch");
 
             const smallMtbFemale = inch26MtbFemale.filter(element => element.ramSizeSmall === "Yes");
 
-            const mediumMtbFemale = inch26MtbFemale.filter(element =>element.ramSizeMedium === "Yes");
+            const mediumMtbFemale = inch26MtbFemale.filter(element => element.ramSizeMedium === "Yes");
 
             const bigMtbFemale = inch26MtbFemale.filter(element => element.ramSizeBig === "Yes");
 
-            const roadFemale = filteredFemaleBikes.filter(element => element.kind === "road");
-
-            const aluRoadFemale = roadFemale.filter(element =>element.material === "alu");
+            const aluRoadFemale = roadFemale.filter(element => element.material === "alu");
 
             const smallAluRoadFemale = roadFemale.filter(element => element.ramSizeSmall === "Yes");
 
@@ -919,8 +933,6 @@ $(document).ready(function () {
             const mediumRoadAlu26inch = mediumAluRoadFemale.filter(element => element.wheels === "26 inch");
 
             const bigRoadAlu26inch = bigAluRoadFemale.filter(element => element.wheels === "26 inch");
-
-            const cityFemale = filteredFemaleBikes.filter(element => element.kind === "city");
 
             const aluCityFemale = cityFemale.filter(element => element.material === "alu");
 
@@ -940,11 +952,11 @@ $(document).ready(function () {
             ////////////////////////////////////// filters for male bikees //////////////////////
 
 
-            const mtbMaleBikes = filteredMaleBikes.filter(el => el.kind === "mtb");
+
 
             const smallMaleMtbBikes = mtbMaleBikes.filter(el => el.ramSizeSmall === "Yes");
 
-            const mediumMaleMtbBikes = mtbMaleBikes.filter(el =>el.ramSizeMedium === "Yes");
+            const mediumMaleMtbBikes = mtbMaleBikes.filter(el => el.ramSizeMedium === "Yes");
 
             const bigMaleMtbBikes = mtbMaleBikes.filter(el => el.ramSizeBig === "Yes");
 
@@ -958,8 +970,6 @@ $(document).ready(function () {
 
             const big29inchMtbMaleBikes = bigMaleMtbBikes.filter(el => el.wheels === "29 inch");
 
-            const roadMaleBikes = filteredMaleBikes.filter(el => el.kind === "road");
-
             const carbonRoadMaleBikes = roadMaleBikes.filter(el => el.material === "carbon");
 
             const inch26RoadCarbonMaleBikes = carbonRoadMaleBikes.filter(el => el.wheels === "26 inch");
@@ -970,11 +980,9 @@ $(document).ready(function () {
 
             const bigInch26RoadCarbonMaleBikes = inch26RoadCarbonMaleBikes.filter(el => el.ramSizeBig === "Yes");
 
-            const cityMaleBikes = filteredMaleBikes.filter(el => el.kind === "city");
-
             const smallCityMale = cityMaleBikes.filter(el => el.ramSizeSmall === "Yes");
 
-            const mediumCityMale = cityMaleBikes.filter(el =>el.ramSizeMedium === "Yes");
+            const mediumCityMale = cityMaleBikes.filter(el => el.ramSizeMedium === "Yes");
 
             const bigCityMale = cityMaleBikes.filter(el => el.ramSizeBig === "Yes");
 
@@ -991,7 +999,9 @@ $(document).ready(function () {
 
 
                 if ($(".mtb").is(':checked')) {
+                    showBikesDiv(mtbFemale);
                     if ($(".160-175cm").is(':checked')) {
+                        $("#displayBikesContainer").html("");
                         if (($(".aluminum").is(':checked')) &&
                             ($(".Wheels-26inch").is(':checked'))) {
                             showBikesDiv(smallMtbFemale);
@@ -1000,6 +1010,7 @@ $(document).ready(function () {
                     }
 
                     if ($(".175-190cm").is(':checked')) {
+                        $("#displayBikesContainer").html("");
                         if (($(".aluminum").is(':checked')) &&
                             ($(".Wheels-26inch").is(':checked'))) {
                             showBikesDiv(mediumMtbFemale);
@@ -1007,6 +1018,7 @@ $(document).ready(function () {
 
                     }
                     if ($(".190-210cm").is(':checked')) {
+                        $("#displayBikesContainer").html("");
                         if (($(".aluminum").is(':checked')) &&
                             ($(".Wheels-26inch").is(':checked'))) {
                             showBikesDiv(bigMtbFemale);
@@ -1018,7 +1030,9 @@ $(document).ready(function () {
                 }
 
                 if ($(".road").is(':checked')) {
+                    showBikesDiv(roadFemale);
                     if ($(".160-175cm").is(':checked')) {
+                        $("#displayBikesContainer").html("");
                         if (($(".aluminum").is(':checked')) &&
                             ($(".Wheels-26inch").is(':checked'))) {
                             showBikesDiv(smallRoadAlu26inch);
@@ -1027,6 +1041,7 @@ $(document).ready(function () {
                     }
 
                     if ($(".175-190cm").is(':checked')) {
+                        $("#displayBikesContainer").html("");
                         if (($(".aluminum").is(':checked')) &&
                             ($(".Wheels-26inch").is(':checked'))) {
                             showBikesDiv(mediumRoadAlu26inch);
@@ -1034,6 +1049,7 @@ $(document).ready(function () {
 
                     }
                     if ($(".190-210cm").is(':checked')) {
+                        $("#displayBikesContainer").html("");
                         if (($(".aluminum").is(':checked')) &&
                             ($(".Wheels-26inch").is(':checked'))) {
                             showBikesDiv(bigRoadAlu26inch);
@@ -1042,20 +1058,23 @@ $(document).ready(function () {
                 }
 
                 if ($(".city").is(':checked')) {
-
+                    showBikesDiv(cityFemale);
                     if ($(".160-175cm").is(':checked')) {
+                        $("#displayBikesContainer").html("");
                         if (($(".aluminum").is(':checked')) &&
                             ($(".Wheels-26inch").is(':checked'))) {
                             showBikesDiv(small26inchCityFemale);
                         }
                     }
                     if ($(".175-190cm").is(':checked')) {
+                        $("#displayBikesContainer").html("");
                         if (($(".aluminum").is(':checked')) &&
                             ($(".Wheels-26inch").is(':checked'))) {
                             showBikesDiv(medium26inchCityFemale);
                         }
                     }
                     if ($(".190-210cm").is(':checked')) {
+                        $("#displayBikesContainer").html("");
                         if (($(".aluminum").is(':checked')) &&
                             ($(".Wheels-26inch").is(':checked'))) {
                             showBikesDiv(big26inchCityFemale);
@@ -1064,16 +1083,19 @@ $(document).ready(function () {
                 }
             }
 
-            
+
             if ($(".radioBtnMale").hasClass("active")) {
                 if ($(".mtb").is(':checked')) {
+                    showBikesDiv(mtbMaleBikes);
                     if ($(".160-175cm").is(':checked')) {
+                        $("#displayBikesContainer").html("");
                         if (($(".aluminum").is(':checked')) &&
                             ($(".Wheels-26inch").is(':checked'))) {
                             showBikesDiv(small26inchMtbMaleBikes);
                         }
                     }
                     if ($(".175-190cm").is(':checked')) {
+                        $("#displayBikesContainer").html("");
                         if (($(".aluminum").is(':checked')) &&
                             ($(".Wheels-29inch").is(':checked'))) {
                             showBikesDiv(medium29inchMtbMaleBikes);
@@ -1081,6 +1103,7 @@ $(document).ready(function () {
                         }
                     }
                     if ($(".190-210cm").is(':checked')) {
+                        $("#displayBikesContainer").html("");
                         if (($(".aluminum").is(':checked')) &&
                             ($(".Wheels-29inch").is(':checked'))) {
                             showBikesDiv(big29inchMtbMaleBikes);
@@ -1092,13 +1115,16 @@ $(document).ready(function () {
                 }
 
                 if ($(".road").is(':checked')) {
+                    showBikesDiv(roadMaleBikes);
                     if ($(".160-175cm").is(':checked')) {
+                        $("#displayBikesContainer").html("");
                         if (($(".carbon").is(':checked')) &&
                             ($(".Wheels-26inch").is(':checked'))) {
                             showBikesDiv(smallInch26RoadCarbonMaleBikes);
                         }
                     }
                     if ($(".175-190cm").is(':checked')) {
+                        $("#displayBikesContainer").html("");
                         if (($(".carbon").is(':checked')) &&
                             ($(".Wheels-26inch").is(':checked'))) {
                             showBikesDiv(mediumInch26RoadCarbonMaleBikes);
@@ -1106,6 +1132,7 @@ $(document).ready(function () {
                         }
                     }
                     if ($(".190-210cm").is(':checked')) {
+                        $("#displayBikesContainer").html("");
                         if (($(".carbon").is(':checked')) &&
                             ($(".Wheels-26inch").is(':checked'))) {
                             showBikesDiv(bigInch26RoadCarbonMaleBikes);
@@ -1116,18 +1143,22 @@ $(document).ready(function () {
                 }
 
                 if ($(".city").is(':checked')) {
+                    showBikesDiv(cityMaleBikes);
                     if ($(".160-175cm").is(':checked')) {
                         {
+                            $("#displayBikesContainer").html("");
                             showBikesDiv(smallCityMale);
                         }
                     }
                     if ($(".175-190cm").is(':checked')) {
                         {
+                            $("#displayBikesContainer").html("");
                             showBikesDiv(mediumCityMale);
                         }
                     }
                     if ($(".190-210cm").is(':checked')) {
                         {
+                            $("#displayBikesContainer").html("");
                             showBikesDiv(bigCityMale);
                         }
                     }
@@ -1137,7 +1168,7 @@ $(document).ready(function () {
         });
 
 
-        
+
 
 
         ///////////////////////// min and max price btn ////////////////////////////////
@@ -1145,10 +1176,11 @@ $(document).ready(function () {
         minPriceBtn.click(() => {
             if (searchedUserBikesArray.length > 0) {
                 sortSearchedBikesMin(searchedUserBikesArray);
-            } else {
+            } 
+            else {
                 sortingMin();
             }
-        })
+         })
 
         maxPriceBtn.click(() => {
             if (searchedUserBikesArray.length > 0) {
@@ -1162,9 +1194,6 @@ $(document).ready(function () {
 
             $("#displayBikesContainer").html("");
 
-
-
-
             if (femaleBikesBtn.hasClass("active")) {
                 let minPriceBikesFemale = filteredFemaleBikes.sort((a, b) => a.price - b.price);
                 showBikesDiv(minPriceBikesFemale);
@@ -1176,8 +1205,43 @@ $(document).ready(function () {
                 showBikesDiv(minPriceBikesChild);
             }
 
+            else if($(".radioBtnFemale").hasClass("active")){
+                if($(".mtb").is(':checked')){
+                    let minPriceMtbFemale = mtbFemale.sort((a, b) => a.price - b.price);
+                    showBikesDiv(minPriceMtbFemale);
+                }
+            if($(".road").is(':checked')){
+                    let minPriceRoadFemale = roadFemale.sort((a, b) => a.price - b.price);
+                    showBikesDiv(minPriceRoadFemale);
+                }
+            if($(".city").is(':checked')){
+                    let minPriceCityFemale = cityFemale.sort((a, b) => a.price - b.price);
+                    showBikesDiv(minPriceCityFemale);
+                }
             
+            }
+
+            else if($(".radioBtnMale").hasClass("active")){
+                if($(".mtb").is(':checked')){
+                    let minPriceMtbMale = mtbMaleBikes.sort((a, b) => a.price - b.price);
+                    showBikesDiv(minPriceMtbMale);
+                }
+            if($(".road").is(':checked')){
+                    let minPriceRoadMale = roadMaleBikes.sort((a, b) => a.price - b.price);
+                    showBikesDiv(minPriceRoadMale);
+                }
+            if($(".city").is(':checked')){
+                    let minPriceCityMale = cityMaleBikes.sort((a, b) => a.price - b.price);
+                    showBikesDiv(minPriceCityMale); 
+                }
+            
+            }
+
            
+    
+        
+
+        
 
         };
 
@@ -1186,6 +1250,8 @@ $(document).ready(function () {
 
 
             $("#displayBikesContainer").html("");
+
+
 
 
             if (femaleBikesBtn.hasClass("active")) {
@@ -1198,8 +1264,40 @@ $(document).ready(function () {
                 let maxPriceBikesChild = filteredChildBikes.sort((a, b) => b.price - a.price);
                 showBikesDiv(maxPriceBikesChild);
             }
-           
-           
+
+            else if($(".radioBtnFemale").hasClass("active")){
+                if($(".mtb").is(':checked')){
+                    let minPriceMtbFemale = mtbFemale.sort((a, b) => b.price - a.price);
+                    showBikesDiv(minPriceMtbFemale);
+                }
+            if($(".road").is(':checked')){
+                    let minPriceRoadFemale = roadFemale.sort((a, b) => b.price - a.price);
+                    showBikesDiv(minPriceRoadFemale);
+                }
+            if($(".city").is(':checked')){
+                    let minPriceCityFemale = cityFemale.sort((a, b) => b.price - a.price);
+                    showBikesDiv(minPriceCityFemale);
+                }
+            
+            }
+
+            else if($(".radioBtnMale").hasClass("active")){
+                if($(".mtb").is(':checked')){
+                    let minPriceMtbMale = mtbMaleBikes.sort((a, b) => b.price - a.price);
+                    showBikesDiv(minPriceMtbMale);
+                }
+            if($(".road").is(':checked')){
+                    let minPriceRoadMale = roadMaleBikes.sort((a, b) => b.price - a.price);
+                    showBikesDiv(minPriceRoadMale);
+                }
+            if($(".city").is(':checked')){
+                    let minPriceCityMale = cityMaleBikes.sort((a, b) => b.price - a.price);
+                    showBikesDiv(minPriceCityMale); 
+                }
+            
+            }
+
+
 
         };
 
@@ -1309,40 +1407,41 @@ $(document).ready(function () {
 
         //////////////////////////////////////////////////// search input and bnt ////////////////////
 
-       
 
-       
+
+
 
         let searchBtnByName = $("#searchByNameBtn");
 
         searchBtnByName.click(() => {
 
-           
-           $("#displayBikesContainer").html("");
+
+            $("#displayBikesContainer").html("");
 
             let inputValue = $("#searchByBrandName").val().trim().toLowerCase();
 
-            if(inputValue === ""){
+            if (inputValue === "") {
                 searchedUserBikesArray = [];
                 return;
             }
 
             searchedUserBikesArray = bikes.filter((bikes) => bikes.model.toLowerCase().indexOf(inputValue) > -1);
-               
+
             showBikesDiv(searchedUserBikesArray);
 
             $('#searchByBrandName').val('');
-            });
+        });
 
-            function sortSearchedBikesMax(arrayToBeSorted) {
-                let sortedArray = arrayToBeSorted.sort((a, b) => b.price - a.price);
-                showBikesDiv(sortedArray);
-            }
-            function sortSearchedBikesMin(arrayToBeSorted) {
-                let sortedArray = arrayToBeSorted.sort((a, b) => a.price - b.price);
-                showBikesDiv(sortedArray);
-            }
-           
+        function sortSearchedBikesMax(arrayToBeSorted) {
+            let sortedArray = arrayToBeSorted.sort((a, b) => b.price - a.price);
+            showBikesDiv(sortedArray);
+        }
+
+        function sortSearchedBikesMin(arrayToBeSorted) {
+            let sortedArray = arrayToBeSorted.sort((a, b) => a.price - b.price);
+            showBikesDiv(sortedArray);
+        }
+
 
         window.onload = () => $("#searchByBrandName").focus();
 
