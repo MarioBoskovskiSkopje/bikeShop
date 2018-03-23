@@ -375,7 +375,7 @@
         "price": 60000
     },
     {
-        "model": "Bianch",
+        "model": "Bianchi",
         "material": "alu",
         "diskBrake": "No",
         "vBrake": "Yes",
@@ -390,7 +390,7 @@
         "price": 20000
     },
     {
-        "model": "Bianch",
+        "model": "Bianchi",
         "material": "alu",
         "diskBrake": "No",
         "vBrake": "Yes",
@@ -405,7 +405,7 @@
         "price": 25000
     },
     {
-        "model": "Bianch",
+        "model": "Bianchi",
         "material": "alu",
         "diskBrake": "No",
         "vBrake": "Yes",
@@ -420,7 +420,7 @@
         "price": 18000
     },
     {
-        "model": "Bianch",
+        "model": "Bianchi",
         "material": "alu",
         "diskBrake": "No",
         "vBrake": "Yes",
