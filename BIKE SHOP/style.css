@@ -262,6 +262,17 @@
 
   .labelCheckBox {
       width: 800px;
+      border: 2px solid black;
+      background: rgba(0,0,0,.6);
+  }
+  .radioBtnText{
+      font-size: 50px;
+      font-weight: 800;
+      color:white;
+      font-family: 'Roboto', sans-serif;
+      margin-left: 35px;
+      word-spacing: 20px;
+      display: none;
   }
 
   .checkBoxMaleSearch,
