@@ -8,6 +8,9 @@
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.6/css/bootstrap.min.css" integrity="sha384-rwoIResjU2yc3z8GV/NPeZWAv56rSmLldC3R/AZzGRnGxQQKnKkoFVhFQhNUwEyJ"
         crossorigin="anonymous">
     <link href="https://fonts.googleapis.com/css?family=Gloria+Hallelujah|Roboto" rel="stylesheet">
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/jqueryui/1.12.1/jquery-ui.css">
+
     <link rel="stylesheet" type="text/css" href="style.css">
     <title>BIKE SHOP</title>
 </head>
@@ -24,6 +27,7 @@
     <div class="top-div">
         <div class="container" id="container-btn">
             <div class="row align-items-start">
+
                 <div class="col">
                     <button type="button" class="btn-bikes" id="btnMaleBikes">Male Bikes </button>
                 </div>
@@ -46,24 +50,20 @@
                 <div class="btnMinMax">
                     <button id="btnPriceMin" class="btnPrice">Price MIN</button>
                     <button id="btnPriceMax" class="btnPrice">Price MAX</button>
-                    
+
                 </div>
                 <div class="container col-6 col-xs-2 col-sm-3 col-md-8 " id="mtbRoadCity">
 
-
                     <p class="btnParagraph">Choose your bike by specific specs:</p>
-
 
                     <button id="startSearchingBtn">Start Searching</button>
 
-                    
+                    <p class="radioBtnText">Male   Female</p>
                    
-                        <label class="labelCheckBox"></label><br>
-                        
-                       
-                    
-                    
-                         
+                    <label class="labelCheckBox"></label>
+                
+                    <br>
+
                 </div>
 
 
@@ -72,15 +72,20 @@
             <br>
             <br>
 
-            <button id="refreshSearchingBtn">Refresh Searching</button> 
+            <button id="refreshSearchingBtn">Refresh Searching</button>
         </div>
         <section class="section">
             <div class="container" id="displayBikesContainer"></div>
+
         </section>
 
     </div>
 
 
+    <video width="500" height="500" autoplay loop>
+        <source src="video.mp4" type="video/mp4">
+
+    </video>
 
 
 
@@ -89,10 +94,13 @@
 
 
 
+   
 
-
-    <script src="https://code.jquery.com/jquery-3.1.1.slim.min.js" integrity="sha384-A7FZj7v+d/sdmMqp/nOQwliLvUsJfDHW+k9Omg/a/EheAdgtzNs3hpfag6Ed950n"
-        crossorigin="anonymous"></script>
+    <script src="https://code.jquery.com/jquery-3.3.1.js" integrity="sha256-2Kok7MbOyxpgUVvAk/HJ2jigOSYS2auK4Pfzbm7uH60=" crossorigin="anonymous"></script>
+    
+    <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js" integrity="sha256-T0Vest3yCU7pafRw9r+settMBX6JkKN06dqBnpQ8d30="
+    crossorigin="anonymous"></script>
+    
     <script src="https://cdnjs.cloudflare.com/ajax/libs/tether/1.4.0/js/tether.min.js" integrity="sha384-DztdAPBWPRXSA/3eYEEUWrWCy7G5KFbe8fFjk5JAIxUYHKkDx6Qin1DkWx51bBrb"
         crossorigin="anonymous"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.6/js/bootstrap.min.js" integrity="sha384-vBWWzlZJ8ea9aCX4pEW3rVHjgjt7zpkNpZk+02D9phzyeVkE+jo0ieGizqPLForn"
