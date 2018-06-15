@@ -10,9 +10,7 @@
         "imageUrl": "http://outdoor.mk/image/cache/data/corratec13/xvcarbon0213-420x420.jpg",
         "genre": "male",
         "kind": "mtb",
-        "ramSizeSmall": "Yes",
-        "ramSizeMedium": "No",
-        "ramSizeBig": "No",
+        "ramSize": "SmallRam",
         "price": 100000
     },
     {
@@ -25,9 +23,7 @@
         "imageUrl": "http://outdoor.mk/image/cache/data/bianchi16/km291-700x700.jpg",
         "genre": "male",
         "kind": "mtb",
-        "ramSizeSmall": "No",
-        "ramSizeMedium": "Yes",
-        "ramSizeBig": "Yes",
+        "ramSize": "mediumRam",
         "price": 80000
     },
     {
@@ -40,9 +36,7 @@
         "imageUrl": "http://outdoor.mk/image/cache/data/bianchi16/dl272-700x700.jpg",
         "genre": "male",
         "kind": "mtb",
-        "ramSizeSmall": "Yes",
-        "ramSizeMedium": "Yes",
-        "ramSizeBig": "No",
+        "ramSize": "mediumRam",
         "price": 40000
     },
     {
@@ -55,9 +49,7 @@
         "imageUrl": "http://outdoor.mk/image/cache/data/corratec15/SPRBWRC-700x700.jpg",
         "genre": "male",
         "kind": "mtb",
-        "ramSizeSmall": "Yes",
-        "ramSizeMedium": "Yes",
-        "ramSizeBig": "No",
+        "ramSize": "bigRam",
         "price": 80000
     },
     {
@@ -70,9 +62,7 @@
         "imageUrl": "http://www.bikemarket.mk/image/cache/data/products/TOCACI/SCOTT%202018/SCALE/29/950-1200x1200.jpg",
         "genre": "male",
         "kind": "mtb",
-        "ramSizeSmall": "No",
-        "ramSizeMedium": "Yes",
-        "ramSizeBig": "Yes",
+        "ramSize": "bigRam",
         "price": 70000
     },
     {
@@ -85,9 +75,7 @@
         "imageUrl": "http://www.bikemarket.mk/image/cache/data/products/TOCACI/scott_2016/27.5/ASPECT_740-1200x1200.jpg",
         "genre": "male",
         "kind": "mtb",
-        "ramSizeSmall": "Yes",
-        "ramSizeMedium": "Yes",
-        "ramSizeBig": "No",
+        "ramSize": "mediumRam",
         "price": 60000
     },
     {
@@ -100,9 +88,7 @@
         "imageUrl": "http://www.bikemarket.mk/image/cache/data/products/TOCACI/SCOTT%202018/ASPECT/27.5/780-1200x1200.jpg",
         "genre": "male",
         "kind": "mtb",
-        "ramSizeSmall": "Yes",
-        "ramSizeMedium": "No",
-        "ramSizeBig": "No",
+        "ramSize": "smallRam",
         "price": 20000
     },
     {
@@ -115,9 +101,7 @@
         "imageUrl": "http://www.bikemarket.mk/image/cache/data/products/TOCACI/SCOTT%202018/ASPECT/29/980-1200x1200.jpg",
         "genre": "male",
         "kind": "mtb",
-        "ramSizeSmall": "Yes",
-        "ramSizeMedium": "No",
-        "ramSizeBig": "No",
+        "ramSize": "smallRam",
         "price": 20000
     },
     {
@@ -130,9 +114,7 @@
         "imageUrl": "http://www.bikemarket.mk/image/cache/data/products/TOCACI/SCOTT%202018/ASPECT/29/980-1200x1200.jpg",
         "genre": "male",
         "kind": "mtb",
-        "ramSizeSmall": "Yes",
-        "ramSizeMedium": "No",
-        "ramSizeBig": "No",
+        "ramSize": "smallRam",
         "price": 18000
     },
     {
@@ -145,9 +127,7 @@
         "imageUrl": "http://outdoor.mk/image/cache/data/bianchi13/cam1-700x700.jpg",
         "genre": "male",
         "kind": "city",
-        "ramSizeSmall": "Yes",
-        "ramSizeMedium": "Yes",
-        "ramSizeBig": "Yes",
+        "ramSize": "smallRam",
         "price": 25000
     },
     {
@@ -160,9 +140,7 @@
         "imageUrl": "http://outdoor.mk/image/cache/data/bianchi17/onice-700x700.jpg",
         "genre": "male",
         "kind": "city",
-        "ramSizeSmall": "Yes",
-        "ramSizeMedium": "Yes",
-        "ramSizeBig": "No",
+        "ramSize": "SmallRam",
         "price": 25000
     },
     {
@@ -175,9 +153,7 @@
         "imageUrl": "http://outdoor.mk/image/cache/data/bianchi17/SplRbn-700x700.jpg",
         "genre": "male",
         "kind": "city",
-        "ramSizeSmall": "No",
-        "ramSizeMedium": "Yes",
-        "ramSizeBig": "No",
+        "ramSize": "SmallRam",
         "price": 30000
     },
     {
@@ -190,9 +166,7 @@
         "imageUrl": "http://outdoor.mk/image/cache/data/bianchi17/rbn%20siv-700x700.jpg",
         "genre": "male",
         "kind": "city",
-        "ramSizeSmall": "No",
-        "ramSizeMedium": "Yes",
-        "ramSizeBig": "Yes",
+        "ramSize": "SmallRam",
         "price": 45000
     },
     {
@@ -205,9 +179,7 @@
         "imageUrl": "http://outdoor.mk/image/cache/data/bianchi17/Tpz%20mask-700x700.jpg",
         "genre": "male",
         "kind": "city",
-        "ramSizeSmall": "Yes",
-        "ramSizeMedium": "Yes",
-        "ramSizeBig": "Yes",
+        "ramSize": "SmallRam",
         "price": 30000
     },
     {
@@ -220,9 +192,7 @@
         "imageUrl": "http://outdoor.mk/image/cache/data/corratec14/shppro-700x700.gif",
         "genre": "male",
         "kind": "city",
-        "ramSizeSmall": "Yes",
-        "ramSizeMedium": "No",
-        "ramSizeBig": "Yes",
+        "ramSize": "SmallRam",
         "price": 65000
     },
     {
@@ -235,9 +205,7 @@
         "imageUrl": "http://outdoor.mk/image/cache/data/corratec13/urban3-700x700.jpg",
         "genre": "male",
         "kind": "city",
-        "ramSizeSmall": "No",
-        "ramSizeMedium": "No",
-        "ramSizeBig": "Yes",
+        "ramSize": "SmallRam",
         "price": 35000
     },
     {
@@ -250,9 +218,7 @@
         "imageUrl": "http://www.bikemarket.mk/image/cache/data/products/TOCACI/MERIDA%202017/CROSSWAY/Crossway_10v-1200x1200.jpg",
         "genre": "male",
         "kind": "city",
-        "ramSizeSmall": "No",
-        "ramSizeMedium": "Yes",
-        "ramSizeBig": "No",
+        "ramSize": "SmallRam",
         "price": 25000
     },
     {
@@ -265,9 +231,7 @@
         "imageUrl": "http://outdoor.mk/image/cache/data/bianchi17/201425_00_d-700x700.jpg",
         "genre": "male",
         "kind": "road",
-        "ramSizeSmall": "Yes",
-        "ramSizeMedium": "Yes",
-        "ramSizeBig": "Yes",
+       "ramSize": "SmallRam",
         "price": 120000
     },
     {
@@ -280,9 +244,7 @@
         "imageUrl": "http://outdoor.mk/image/cache/data/bianchi18/SMPRCntr-700x700.jpg",
         "genre": "male",
         "kind": "road",
-        "ramSizeSmall": "Yes",
-        "ramSizeMedium": "Yes",
-        "ramSizeBig": "Yes",
+       "ramSize": "SmallRam",
         "price": 90000
     },
     {
@@ -295,9 +257,7 @@
         "imageUrl": "http://outdoor.mk/image/cache/data/bianchi18/SMPRCntr-700x700.jpg",
         "genre": "female",
         "kind": "road",
-        "ramSizeSmall": "Yes",
-        "ramSizeMedium": "Yes",
-        "ramSizeBig": "Yes",
+       "ramSize": "SmallRam",
         "price": 130000
     },
     {
@@ -310,9 +270,7 @@
         "imageUrl": "http://outdoor.mk/image/cache/data/bianchi16/2016%20bianchi%20sora-700x700.jpg",
         "genre": "male",
         "kind": "road",
-        "ramSizeSmall": "Yes",
-        "ramSizeMedium": "Yes",
-        "ramSizeBig": "Yes",
+       "ramSize": "SmallRam",
         "price": 65000
     },
     {
@@ -325,9 +283,7 @@
         "imageUrl": "http://outdoor.mk/image/cache/data/bianchi16/2016%20bianchi%20sora-700x700.jpg",
         "genre": "female",
         "kind": "road",
-        "ramSizeSmall": "Yes",
-        "ramSizeMedium": "Yes",
-        "ramSizeBig": "Yes",
+       "ramSize": "SmallRam",
         "price": 75000
     },
     {
@@ -340,9 +296,7 @@
         "imageUrl": "http://outdoor.mk/image/cache/data/bianchi14/MLTLKT-700x700.jpg",
         "genre": "male",
         "kind": "road",
-        "ramSizeSmall": "Yes",
-        "ramSizeMedium": "Yes",
-        "ramSizeBig": "No",
+       "ramSize": "SmallRam",
         "price": 95000
     },
     {
@@ -355,9 +309,7 @@
         "imageUrl": "http://outdoor.mk/image/cache/data/corratec17/BK22122-700x700.jpg",
         "genre": "male",
         "kind": "road",
-        "ramSizeSmall": "No",
-        "ramSizeMedium": "Yes",
-        "ramSizeBig": "Yes",
+       "ramSize": "SmallRam",
         "price": 85000
     },
     {
@@ -370,9 +322,7 @@
         "imageUrl": "http://outdoor.mk/image/cache/data/corratec17/BK22129-700x700.jpg",
         "genre": "male",
         "kind": "road",
-        "ramSizeSmall": "Yes",
-        "ramSizeMedium": "No",
-        "ramSizeBig": "Yes",
+       "ramSize": "SmallRam",
         "price": 60000
     },
     {
@@ -385,9 +335,7 @@
         "imageUrl": "http://outdoor.mk/image/cache/data/bianchi18/rbnoLDred-700x700.jpg",
         "genre": "female",
         "kind": "city",
-        "ramSizeSmall": "No",
-        "ramSizeMedium": "No",
-        "ramSizeBig": "Yes",
+       "ramSize": "SmallRam",
         "price": 20000
     },
     {
@@ -400,9 +348,7 @@
         "imageUrl": "http://outdoor.mk/image/cache/data/bianchi17/rbnLdclts-700x700.jpg",
         "genre": "female",
         "kind": "city",
-        "ramSizeSmall": "Yes",
-        "ramSizeMedium": "Yes",
-        "ramSizeBig": "No",
+       "ramSize": "SmallRam",
         "price": 25000
     },
     {
@@ -415,9 +361,7 @@
         "imageUrl": "http://outdoor.mk/image/cache/data/bianchi17/rbn%20ldy%20crn-700x700.jpg",
         "genre": "female",
         "kind": "city",
-        "ramSizeSmall": "Yes",
-        "ramSizeMedium": "No",
-        "ramSizeBig": "Yes",
+        "ramSize": "SmallRam",
         "price": 18000
     },
     {
@@ -430,9 +374,7 @@
         "imageUrl": "http://outdoor.mk/image/cache/data/bianchi18/rbnoLDorng-700x700.jpg",
         "genre": "female",
         "kind": "city",
-        "ramSizeSmall": "No",
-        "ramSizeMedium": "Yes",
-        "ramSizeBig": "No",
+        "ramSize": "SmallRam",
         "price": 25000
     },
     {
@@ -445,9 +387,7 @@
         "imageUrl": "http://www.bikecenter.mk/image/cache/data/products/TOCACI/SCOTT2018/cont740-1200x1200.jpg",
         "genre": "female",
         "kind": "mtb",
-        "ramSizeSmall": "Yes",
-        "ramSizeMedium": "Yes",
-        "ramSizeBig": "No",
+        "ramSize": "SmallRam",
         "price": 15000
     },
     {
@@ -460,9 +400,7 @@
         "imageUrl": "http://www.bikecenter.mk/image/cache/data/products/TOCACI/SCOTT/2017/CONT730-1200x1200.jpg",
         "genre": "female",
         "kind": "mtb",
-        "ramSizeSmall": "Yes",
-        "ramSizeMedium": "Yes",
-        "ramSizeBig": "Yes",
+       "ramSize": "SmallRam",
         "price": 40000
     },
     {
@@ -475,9 +413,7 @@
         "imageUrl": "http://www.bikecenter.mk/image/cache/data/products/TOCACI/SCOTT2018/CONT720-1200x1200.jpg",
         "genre": "female",
         "kind": "mtb",
-        "ramSizeSmall": "Yes",
-        "ramSizeMedium": "No",
-        "ramSizeBig": "Yes",
+       "ramSize": "SmallRam",
         "price": 35000
     },
     {
@@ -490,9 +426,7 @@
         "imageUrl": "http://www.bikecenter.mk/image/cache/data/products/TOCACI/SCOTT2018/subcross4018-1200x1200.jpg",
         "genre": "female",
         "kind": "mtb",
-        "ramSizeSmall": "No",
-        "ramSizeMedium": "Yes",
-        "ramSizeBig": "Yes",
+       "ramSize": "SmallRam",
         "price": 25000
     },
     {
@@ -505,9 +439,7 @@
         "imageUrl": "http://www.bikecenter.mk/image/cache/data/products/TOCACI/SCOTT2018/subcross30lady18-1200x1200.jpg",
         "genre": "female",
         "kind": "mtb",
-        "ramSizeSmall": "No",
-        "ramSizeMedium": "Yes",
-        "ramSizeBig": "No",
+       "ramSize": "SmallRam",
         "price": 45000
     },
     {
@@ -520,9 +452,7 @@
         "imageUrl": "http://www.bikecenter.mk/image/cache/data/products/TOCACI/CROSS/CROSS/FUSIONLADY-1200x1200.jpg",
         "genre": "female",
         "kind": "mtb",
-        "ramSizeSmall": "Yes",
-        "ramSizeMedium": "Yes",
-        "ramSizeBig": "Yes",
+       "ramSize": "SmallRam",
         "price": 18000
     },
     {
@@ -535,9 +465,7 @@
         "imageUrl": "https://cdn3.bigcommerce.com/s-uc8pekr/products/47043/images/57094/Aspect_670_1__87517.1509117228.1280.1280.jpg?c=2",
         "genre": "female",
         "kind": "city",
-        "ramSizeSmall": "No",
-        "ramSizeMedium": "Yes",
-        "ramSizeBig": "Yes",
+       "ramSize": "SmallRam",
         "price": 10000
     },
     {
@@ -550,9 +478,7 @@
         "imageUrl": "http://www.bikecenter.mk/image/cache/data/products/TOCACI/POLAR/MTB/polarcruise-1200x1200.jpg",
         "genre": "female",
         "kind": "city",
-        "ramSizeSmall": "Yes",
-        "ramSizeMedium": "Yes",
-        "ramSizeBig": "Yes",
+       "ramSize": "SmallRam",
         "price": 18000
     },
     {
@@ -565,9 +491,7 @@
         "imageUrl": "http://www.bikecenter.mk/image/cache/data/products/TOCACI/POLAR/CITY/FORESTERCOMPLADY-1200x1200.jpg",
         "genre": "female",
         "kind": "city",
-        "ramSizeSmall": "Yes",
-        "ramSizeMedium": "Yes",
-        "ramSizeBig": "Yes",
+       "ramSize": "SmallRam",
         "price": 22000
     },
     {
@@ -580,9 +504,7 @@
         "imageUrl": "http://www.bikecenter.mk/image/cache/data/products/TOCACI/POLAR/CITY/GLIDERCITY-1200x1200.jpg",
         "genre": "female",
         "kind": "city",
-        "ramSizeSmall": "No",
-        "ramSizeMedium": "Yes",
-        "ramSizeBig": "Yes",
+        "ramSize": "SmallRam",
         "price": 28000
     },
     {
@@ -595,9 +517,7 @@
         "imageUrl": "http://www.bikecenter.mk/image/cache/data/products/TOCACI/POLAR/CITY/POLAR%20MADISON%20ZENSKI-1200x1200.jpg",
         "genre": "female",
         "kind": "city",
-        "ramSizeSmall": "Yes",
-        "ramSizeMedium": "Yes",
-        "ramSizeBig": "No",
+       "ramSize": "SmallRam",
         "price": 12000
     },
     {
@@ -609,9 +529,7 @@
         "imageUrl": "http://www.bikemarket.mk/image/cache/data/products/TOCACI/FAST/BIC-7310_1-1200x1200.jpg",
         "genre": "child",
         "kind": "city",
-        "ramSizeSmall": "Yes",
-        "ramSizeMedium": "No",
-        "ramSizeBig": "No",
+      "ramSize": "ExtraSmallRam",
         "price": 6000
     },
     {
@@ -623,9 +541,7 @@
         "imageUrl": "http://www.bikemarket.mk/image/cache/data/products/TOCACI/FAST/BIC-7311_1-1200x1200.jpg",
         "genre": "child",
         "kind": "city",
-        "ramSizeSmall": "Yes",
-        "ramSizeMedium": "No",
-        "ramSizeBig": "No",
+        "ramSize": "ExtraSmallRam",
         "price": 8000
     },
     {
@@ -637,9 +553,7 @@
         "imageUrl": "http://www.bikemarket.mk/image/cache/data/products/TOCACI/FAST/BIC-7312_1-1200x1200.jpg",
         "genre": "child",
         "kind": "city",
-        "ramSizeSmall": "Yes",
-        "ramSizeMedium": "No",
-        "ramSizeBig": "No",
+        "ramSize": "ExtraSmallRam",
         "price": 10000
     },
     {
@@ -651,9 +565,7 @@
         "imageUrl": "http://www.bikemarket.mk/image/cache/data/products/TOCACI/ALPINA/DETSKI/ALPINA%20FIREBALL%2016%20belo-zeleni-1200x1200.jpg",
         "genre": "child",
         "kind": "city",
-        "ramSizeSmall": "Yes",
-        "ramSizeMedium": "No",
-        "ramSizeBig": "No",
+        "ramSize": "ExtraSmallRam",
         "price": 6000
     },
     {
@@ -666,9 +578,7 @@
         "imageUrl": "http://www.bikemarket.mk/image/cache/data/products/TOCACI/ALPINA/DETSKI/BIC-1430-RED_1-1200x1200.jpg",
         "genre": "child",
         "kind": "city",
-        "ramSizeSmall": "Yes",
-        "ramSizeMedium": "No",
-        "ramSizeBig": "No",
+        "ramSize": "ExtraSmallRam",
         "price": 12000
     },
     {
@@ -680,9 +590,7 @@
         "imageUrl": "http://www.bikemarket.mk/image/cache/data/products/TOCACI/ALPINA/DETSKI/ALPINA%20SPIKE%2016%20CRNO-ZELENI-1200x1200.jpg",
         "genre": "child",
         "kind": "city",
-        "ramSizeSmall": "Yes",
-        "ramSizeMedium": "No",
-        "ramSizeBig": "No",
+        "ramSize": "ExtraSmallRam",
         "price": 9000
     },
     {
@@ -694,9 +602,7 @@
         "imageUrl": "http://www.bikemarket.mk/image/cache/data/products/TOCACI/BELLELLI/BellelliGREYPURPPLE-1200x1200.jpg",
         "genre": "child",
         "kind": "city",
-        "ramSizeSmall": "Yes",
-        "ramSizeMedium": "No",
-        "ramSizeBig": "No",
+         "ramSize": "ExtraSmallRam",
         "price": 4000
     },
     {
@@ -709,9 +615,7 @@
         "imageUrl": "http://www.bikemarket.mk/image/cache/data/products/TOCACI/BOOSTER/BOOSTER%20TURBO%20MU%C5%A0KI%20BELI-1200x1200.jpg",
         "genre": "child",
         "kind": "city",
-        "ramSizeSmall": "Yes",
-        "ramSizeMedium": "No",
-        "ramSizeBig": "No",
+         "ramSize": "ExtraSmallRam",
         "price": 8000
     },
     {
@@ -724,9 +628,7 @@
         "imageUrl": "http://www.bikemarket.mk/image/cache/data/products/TOCACI/BOOSTER/BOOSTER%20TURBO%20%C5%BDENSKI%20CRNO-LJUBICASTI-1200x1200.jpg",
         "genre": "child",
         "kind": "city",
-        "ramSizeSmall": "Yes",
-        "ramSizeMedium": "No",
-        "ramSizeBig": "No",
+        "ramSize": "ExtraSmallRam",
         "price": 10000
     }
 ]
