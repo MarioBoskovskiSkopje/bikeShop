@@ -15,7 +15,7 @@
         "price": 100000
     },
     {
-        "id":1,
+        "id":2,
         "model": "Bianchi",
         "material": "alu",
         "diskBrake": "Yes",
@@ -57,7 +57,7 @@
         "price": 80000
     },
     {
-        "id":1,
+        "id":3,
         "model": "Scott",
         "material": "alu",
         "diskBrake": "Yes",
@@ -225,7 +225,7 @@
         "price": 35000
     },
     {
-        "id":1,
+        "id":4,
         "model": "Merida",
         "material": "alu",
         "diskBrake": "No",
@@ -407,7 +407,7 @@
         "price": 25000
     },
     {
-        "id":1,
+        "id":5,
         "model": "Scott",
         "material": "alu",
         "diskBrake": "Yes",
@@ -505,7 +505,7 @@
         "price": 10000
     },
     {
-        "id":1,
+        "id":6,
         "model": "Polar",
         "material": "steel",
         "diskBrake": "No",
@@ -561,7 +561,7 @@
         "price": 12000
     },
     {
-        "id":1,
+        "id":7,
         "model": "Alpina",
         "material": "steel",
         "diskBrake": "No",
