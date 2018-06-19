@@ -569,6 +569,7 @@
         "wheels": "16 inch",
         "imageUrl": "http://www.bikemarket.mk/image/cache/data/products/TOCACI/FAST/BIC-7310_1-1200x1200.jpg",
         "genre": "child",
+         "shifter": "NoSifter",
         "kind": "city",
       "ramSize": "ExtraSmallRam",
         "price": 6000
@@ -582,6 +583,7 @@
         "wheels": "18 inch",
         "imageUrl": "http://www.bikemarket.mk/image/cache/data/products/TOCACI/FAST/BIC-7311_1-1200x1200.jpg",
         "genre": "child",
+         "shifter": "NoSifter",
         "kind": "city",
         "ramSize": "ExtraSmallRam",
         "price": 8000
@@ -595,6 +597,7 @@
         "wheels": "20 inch",
         "imageUrl": "http://www.bikemarket.mk/image/cache/data/products/TOCACI/FAST/BIC-7312_1-1200x1200.jpg",
         "genre": "child",
+         "shifter": "NoSifter",
         "kind": "city",
         "ramSize": "ExtraSmallRam",
         "price": 10000
@@ -608,6 +611,7 @@
         "wheels": "16 inch",
         "imageUrl": "http://www.bikemarket.mk/image/cache/data/products/TOCACI/ALPINA/DETSKI/ALPINA%20FIREBALL%2016%20belo-zeleni-1200x1200.jpg",
         "genre": "child",
+         "shifter": "NoSifter",
         "kind": "city",
         "ramSize": "ExtraSmallRam",
         "price": 6000
@@ -636,6 +640,7 @@
         "imageUrl": "http://www.bikemarket.mk/image/cache/data/products/TOCACI/ALPINA/DETSKI/ALPINA%20SPIKE%2016%20CRNO-ZELENI-1200x1200.jpg",
         "genre": "child",
         "kind": "city",
+         "shifter": "NoSifter",
         "ramSize": "ExtraSmallRam",
         "price": 9000
     },
@@ -646,6 +651,7 @@
         "diskBrake": "No",
         "vBrake": "Yes",
         "wheels": "12 inch",
+         "shifter": "NoSifter",
         "imageUrl": "http://www.bikemarket.mk/image/cache/data/products/TOCACI/BELLELLI/BellelliGREYPURPPLE-1200x1200.jpg",
         "genre": "child",
         "kind": "city",
